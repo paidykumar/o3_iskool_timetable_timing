@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="o3_timings.list">
+      <field name="name">o3_timings list</field>
+      <field name="model">o3_timings.o3_timings</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="o3_timings.action_window">
+      <field name="name">o3_timings window</field>
+      <field name="res_model">o3_timings.o3_timings</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="o3_timings.action_server">
+      <field name="name">o3_timings server</field>
+      <field name="model_id" ref="model_o3_timings_o3_timings"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="o3_timings" id="o3_timings.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="o3_timings.menu_1" parent="o3_timings.menu_root"/>
+    <menuitem name="Menu 2" id="o3_timings.menu_2" parent="o3_timings.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="o3_timings.menu_1_list" parent="o3_timings.menu_1"
+              action="o3_timings.action_window"/>
+    <menuitem name="Server to list" id="o3_timings" parent="o3_timings.menu_2"
+              action="o3_timings.action_server"/>
+    -->
+  </data>
+</odoo>
