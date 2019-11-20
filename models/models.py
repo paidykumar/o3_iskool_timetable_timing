@@ -13,3 +13,10 @@ from odoo import models, fields, api
 #     @api.depends('value')
 #     def _value_pc(self):
 #         self.value2 = float(self.value) / 100
+
+class o3_sessions(models.Model):
+
+    _inherit = 'op.timing'
+    minute = fields.Selection(
+        [('00', '00'), ('05', '05'), ('15', '15'), ('30', '30'), ('45', '45')], 'Minute',
+        required=True)
