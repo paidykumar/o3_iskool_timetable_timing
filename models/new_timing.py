@@ -18,5 +18,5 @@ class o3_sessions(models.Model):
 
     _inherit = 'op.timing'
     minute = fields.Selection(
-        [('00', '00'), ('05', '05'), ('15', '15'), ('30', '30'), ('45', '45')], 'Minute',
+        [('00', '00'), ('05', '05'), ('15', '15'), ('30', '30'), ('45', '45'), ('50', '50')], 'Minute',
         required=True)
